@@ -23,8 +23,8 @@ To get started with creating a site, just click "[use this template]"!
 ----
 
 [^1]: [This website is for educational purposes only and not intended for any professional or monetizable use]
-[^1]: [To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).
-[^1]: [To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).
+[^2]: [To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).
+[^3]: [To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).
 
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
 [GitHub Pages]: https://docs.github.com/en/pages
