@@ -1,5 +1,5 @@
 ---
-title: Data Analysis & Exploration
+title: 3. Data Analysis & Exploration
 layout: home
 ---
 
