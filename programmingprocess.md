@@ -14,50 +14,51 @@ layout: home
 # **Collection**
 {: .fs-7 }
 
+Amazon reviews come in sets of ten per page in order of date. At the time of our data retrieval, the Logitech mouse had 15,203 ratings and 2,606 reviews, which meant that we had 261 pages worth of reviews to paginate through. Every page’s URL is the same apart from the page number, so we labeled the page number as “i” and ran a for loop in the range of the page count. To ease the performance load on the program, we ran multiple loops in groups of 50 pages rather than keeping everything in one large loop. We kept the groups separate through the entire program until the very end where we concatenated our extracted data. While this makes our code less clean, it significantly lowers the minimum processing power to run the code, improving our program’s accessibility. 
 
+Visual: pagination code
 
+Once we created a list of URLs, we needed to establish a connection between our program and each URL via an import from the Python Requests library. Because our program is extracting data from over 2,000 reviews, we risk having our IP address blocked from making such a high quantity of requests. This is especially true for a website like Amazon which is not web-scraper friendly. To avoid issues with IP blocks, captchas, and proxies, we requested data via a third-party API called ScraperAPI which rotates through IP addresses while iterating through each URL within our list of URLs. This became the outer loop within our nested for loop. 
 
+Visual: Request being made with our API - API key blocked out
 
+With an established connection, we were able to start pulling our relevant data. From each review, we wanted to pull the reviewer name, the star rating, review body, and review date, which we would eventually store into a pandas data frame. After manually identifying the relevant HTML for each data variable, we created an inner loop that used beautiful soup to extract the data for each review, running ten at a time for each URL and then moving on to the next page. 
 
+Visual: show inner for loop 
 
+Each group of data variables per review was appended into its own dictionary. These dictionaries were then combined and converted into a pandas data frame, making it easy to conduct further cleaning. The dictionaries were structured so the data would fit naturally into a two-dimensional matrix with each column representing a new data variable once converted into a pandas data frame. 
 
-
-
-
-
-
-
-
-This website has been created to showcase our final project for DS105M. Our goal was to create a web scraping plug-in program to seamlessly extract Amazon customer reviews. To demonstrate our program, we extracted data on a computer mouse – the Logitech MX Master 3 and performed data analysis on its customer reviews. 
-
-# **Context**
+# **Cleaning**
 {: .fs-7 }
 
-In the modern day business-to-consumer industry, no company has had as strong of an influence on reshaping the competitive landscape as Amazon, especially when it comes to expediting the transition from brick-and-mortar to ecommerce dependency. With an average of 200 million unique visitors per month and over 6 million worldwide sellers, Amazon’s sheer size allows it to maintain an ever-growing grip over the ecommerce industry. 
+While we were able to pull the relevant data with Beautiful Soup, much of the data came with additional HTML syntax that we did not need. Because of this, we had to come up with unique cleaning solutions for each data variable. This table showcases the before and after cleaning for each variable:
 
-One of the key factors that has contributed to Amazon's growth over time is the center-stage role that customer reviews play in the Amazon shopping experience. Customer reviews are a huge value add for both buyers and sellers on Amazon as they function as an accurate and digestible information channel for customer satisfaction. Customer satisfaction is a benefit that extends both ways: buyers want products they purchase to fulfill their needs, while sellers want to increase customer retention and future customer acquisition by giving more buyers what they want. Amazon enables new buyers to refer to reviews of customers with similar desires to themselves, identifying whether the product succeeds in satisfying their areas of need. At the same time, sellers can analyze customer reviews to derive conclusions so they can improve future iterations of their products. 
+Visual: Table
 
-Typically, scrolling through the customer reviews section of an Amazon-listed product is enough information for most users to make a conclusion about the product. However, there is a vast variety of extraordinary cases that would require extraction of a subset or all reviews available on an Amazon page. The most obvious use case of review extraction is simple record-keeping, say if a seller wants to keep a copy of reviews published on their product at a given point in time. In more advanced use cases, review data can be analyzed further through descriptive analytics like data visualizations, or NLP methods such as sentiment analysis, opinion modeling, topic modeling, and more. Such analysis should help sellers understand what customers think about their products in a more efficient and digestible manner. 
+**Reviewer Name:** For this variable, the only issue was the additional HTML code captured in the first 29 and last 7 characters of each data point. These characters were eliminated using string slicing with Python Pandas. 
 
-# **Motivation**
-{: .fs-7 }
+Visual: code for reviewer name cleaning
 
-With this large variety of use cases comes an unaddressed issue: there is no easy or efficient method to extract customer reviews. With this in mind, our primary goal was to create a web-scraping plug in program that can seamlessly extract customer reviews from any Amazon page. Such a program can then be used by businesses, researchers, shopppers, or any other third party interested in scraping Amazon reviews.   
+**Star Rating:** Like reviewer name, the issue we faced here was the additional HTML code captured in the first 25 and last 24 characters, which were eliminated using string slicing. We also converted the rating into an integer so it can be used for data analysis in the future. This was the variable for which we had to manipulate the type as the rest were already strings.
 
-Additionally, we wanted to provide our own use case of how such data can be analyzed. We attempted to perform some analysis on a computer mouse popularized by the gaming and professional services industries, the Logitech MX Master 3. Our goal was to find some key insights that Logitech can consider in future iterations of the mouse and provide an example of how the data can be used in a business setting. We attempted this process using a variety of descriptive analytics and data visualizations, as worked on a NLP model for further analysis. In the end, we ran into a variety of challenges that made us realize that we overestimated the usability of Amazon review data, particularly relating to the data itself being biased towards positive reviews, making it especially difficult to perform quality data analysis. 
+Visual: code for star rating cleaning
 
-# **Collaboration**
-{: .fs-7 }
+**Reviews:** We eliminated the first 89 and last 15 characters using string slicing. We also replaced the HTML code that represented breaks in the text with an empty string (“”) so the text would not be interrupted by HTML. This way the text can be used without interruption for NLP. 
 
-This project was completed by David Veksler, Abhinav Vijayakumara, and Zixuan (Vanessa) Wang. The following lists each group member’s contributions:
+Visual: code for reviews cleaning
 
-**David:** Worked on project scope, project planning, code to extract Amazon Reviews, code on cleaning the extracted data, finalized code for users that want to try the plug-in model, presentation tempelate, presentation text and visuals for week 8 and week 11, website configuration and design, website text and visuals, repository management and commits.  
-**Abhinav:** Worked on ___. 
-**Zixuan (Vanessa):** Worked on ____. 
+**Review Dates:** For this variable, the HTML strings in the front of the actual date were of different lengths, and the months of the dates are different lengths (march has 5 characters while December has 8, for example). To work around these challenges, we used Python Pandas to only keep the last 7 characters of each string using a stop argument. Then, we applied a lambda function to each element of the column. The lambda function first split the string on spaces, then used list slicing to grab the last three items of the list, and then joined those three items back into a single string by adding a space between each word. 
+
+Visual: code for review dates cleaning
+
+We also used a function to drop the whole row in case there were any data points that were blank. Because our data was extracted accurately, this only affected rows that had unusual review texts, as this was the only element that was unique in its structure (i.e., how many characters, page breaks, unique symbols, etc.). We felt it was important to delete the entire row so each entry can be complete for any kind of data analysis or visualization. 
+
+
+
+
+
 
 ----
 
 - [For more information on ScraperAPI and their services, please visit their website by clicking here] (https://www.scraperapi.com). 
 
-- [To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).
-- [To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).
