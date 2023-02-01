@@ -18,7 +18,7 @@ Amazon reviews come in sets of ten per page in order of date. At the time of our
 
 Visual: pagination code
 
-```Python
+```//Python
 
 #Code for generating first 50 Amazon URLs (500 reviews)
 
