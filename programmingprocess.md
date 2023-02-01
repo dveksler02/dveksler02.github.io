@@ -28,7 +28,7 @@ for i in range(1, 50): # Generate URLs
    + str(i) # Construct URL with page number
    list_of_urls.append(url) # Add URL to list of URLs
 ```
-
+{% endhighlight %}
 
 Once we created a list of URLs, we needed to establish a connection between our program and each URL via an import from the Python Requests library. Because our program is extracting data from over 2,000 reviews, we risk having our IP address blocked from making such a high quantity of requests. This is especially true for a website like Amazon which is not web-scraper friendly. To avoid issues with IP blocks, captchas, and proxies, we requested data via a third-party API called ScraperAPI which rotates through IP addresses while iterating through each URL within our list of URLs. This became the outer loop within our nested for loop. 
 
