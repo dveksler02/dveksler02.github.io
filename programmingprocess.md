@@ -18,6 +18,16 @@ Amazon reviews come in sets of ten per page in order of date. At the time of our
 
 Visual: pagination code
 
+```Python
+
+#Code for generating first 50 Amazon URLs (500 reviews)
+for i in range(1, 50): # Generate URLs
+   url = "https://www.amazon.com/Logitech-MX-Master-3S-Pale/product-reviews/B09HMKFDXC/ref=cm_cr_arp_d_viewopt_srt?ie=UTF8&reviewerType=all_reviews&sortBy=recent&pageNumber=" 
+   + str(i) # Construct URL with page number
+   list_of_urls.append(url) # Add URL to list of URLs
+```
+
+
 Once we created a list of URLs, we needed to establish a connection between our program and each URL via an import from the Python Requests library. Because our program is extracting data from over 2,000 reviews, we risk having our IP address blocked from making such a high quantity of requests. This is especially true for a website like Amazon which is not web-scraper friendly. To avoid issues with IP blocks, captchas, and proxies, we requested data via a third-party API called ScraperAPI which rotates through IP addresses while iterating through each URL within our list of URLs. This became the outer loop within our nested for loop. 
 
 Visual: Request being made with our API - API key blocked out
@@ -53,12 +63,6 @@ Visual: code for review dates cleaning
 
 We also used a function to drop the whole row in case there were any data points that were blank. Because our data was extracted accurately, this only affected rows that had unusual review texts, as this was the only element that was unique in its structure (i.e., how many characters, page breaks, unique symbols, etc.). We felt it was important to delete the entire row so each entry can be complete for any kind of data analysis or visualization. 
 
-
-
-
-
-
 ----
 
 - [For more information on ScraperAPI and their services, please visit their website by clicking here](https://www.scraperapi.com).
-
