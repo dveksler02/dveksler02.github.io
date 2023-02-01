@@ -32,12 +32,12 @@ Additionally, we wanted to provide our own use case of how such data can be anal
 
 This project was completed by David Veksler, Abhinav Vijayakumara, and Zixuan (Vanessa) Wang. The following lists each group member’s contributions:
 
-David: 
-Abhinav: 
-Zixuan (Vanessa): 
+**David:** Worked on project scope, project planning, code to extract Amazon Reviews, code on cleaning the extracted data, finalized code for users that want to try the plug-in model, presentation tempelate, presentation text and visuals for week 8 and week 11, website configuration and design, website text and visuals, repository management and commits.
+**Abhinav:** Worked on ___
+**Zixuan (Vanessa):** Worked on ____
 
 ----
 
 [^1]: [This website is for educational purposes only and not intended for any professional or monetizable use]
-[^2]: [To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).
-[^3]: [To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).
+[To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).
+[To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).
