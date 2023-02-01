@@ -9,6 +9,9 @@ layout: home
 # Summary
 {: .fs-9 }
 
+# Summary
+{: .fs-6 }
+
 This website has been created to summarize our final project for DS105M. Our goal was to create a web scraping plug-in program to seamlessly extract Amazon customer reviews. To demonstrate our program, we extracted data on a computer mouse – the Logitech MX Master 3 and performed data analysis on its customer reviews. 
 
 **Context**
