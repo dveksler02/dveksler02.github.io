@@ -14,23 +14,6 @@ layout: home
 # **Collection**
 {: .fs-7 }
 
-
----
-
-## Syntax highlighted code blocks
-
-Use Jekyll's built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name:
-
-<div class="code-example" markdown="1">
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-{% highlight markdown %} ```js // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } ``` {% endhighlight %}
-
 Amazon reviews come in sets of ten per page in order of date. At the time of our data retrieval, the Logitech mouse had 15,203 ratings and 2,606 reviews, which meant that we had 261 pages worth of reviews to paginate through. Every page’s URL is the same apart from the page number, so we labeled the page number as “i” and ran a for loop in the range of the page count. To ease the performance load on the program, we ran multiple loops in groups of 50 pages rather than keeping everything in one large loop. We kept the groups separate through the entire program until the very end where we concatenated our extracted data. While this makes our code less clean, it significantly lowers the minimum processing power to run the code, improving our program’s accessibility. 
 
 Visual: pagination code
@@ -45,8 +28,7 @@ for i in range(1, 50): # Generate URLs
    + str(i) # Construct URL with page number
    list_of_urls.append(url) # Add URL to list of URLs
 ```
-
-
+<div class="code-example" markdown="1">
 
 Once we created a list of URLs, we needed to establish a connection between our program and each URL via an import from the Python Requests library. Because our program is extracting data from over 2,000 reviews, we risk having our IP address blocked from making such a high quantity of requests. This is especially true for a website like Amazon which is not web-scraper friendly. To avoid issues with IP blocks, captchas, and proxies, we requested data via a third-party API called ScraperAPI which rotates through IP addresses while iterating through each URL within our list of URLs. This became the outer loop within our nested for loop. 
 
