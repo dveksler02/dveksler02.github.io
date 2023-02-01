@@ -35,9 +35,9 @@ This project was completed by David Veksler, Abhinav Vijayakumara, and Zixuan (V
 
 ----
 
-# 1. This website is for educational purposes only and not intended for any professional or monetizable use. 
+#- This website is for educational purposes only and not intended for any professional or monetizable use. 
 {: .fs-2 } 
-# 2. [To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).  
+#- [To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).  
 {: .fs-2 }  
-# 3. [To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).  
+#- [To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).  
 {: .fs-2 }
