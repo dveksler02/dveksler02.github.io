@@ -60,5 +60,5 @@ We also used a function to drop the whole row in case there were any data points
 
 ----
 
-- [For more information on ScraperAPI and their services, please visit their website by clicking here] (https://www.scraperapi.com). 
+- [For more information on ScraperAPI and their services, please visit their website by clicking here](https://www.scraperapi.com).
 
