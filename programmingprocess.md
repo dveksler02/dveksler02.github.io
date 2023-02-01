@@ -3,8 +3,30 @@ title: 2. Programming Process
 layout: home
 ---
 
-# **Summary**
+# **Framework**
 {: .fs-7 }
+
+1.	Create a for loop to paginate through the pages of URLs with Amazon reviews
+2.	Establish a connection by running a request via a proxy API
+3.	Source relevant HTML code for each data feature
+4.	Store into a Python Pandas data frame
+
+# **Collection**
+{: .fs-7 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This website has been created to showcase our final project for DS105M. Our goal was to create a web scraping plug-in program to seamlessly extract Amazon customer reviews. To demonstrate our program, we extracted data on a computer mouse – the Logitech MX Master 3 and performed data analysis on its customer reviews. 
 
@@ -35,6 +57,7 @@ This project was completed by David Veksler, Abhinav Vijayakumara, and Zixuan (V
 
 ----
 
-- This website is for educational purposes only and not intended for any professional or monetizable use.
+- [For more information on ScraperAPI and their services, please visit their website by clicking here] (https://www.scraperapi.com/?utm_source=google&utm_medium=cpc&utm_id=1485898465_54263081981&utm_term=scraperapi&utm_mt=e&utm_device=d&utm_campaign=T1|s|Branded&gclid=Cj0KCQiAic6eBhCoARIsANlox84KfoRIzUDEfYtrHMtXflGG9KtkUMB1sJwPjNq55o7o-bhUVWmb1OsaAnHeEALw_wcB]. 
+
 - [To access our Github Repository click here](https://github.com/dveksler02/dveksler02.github.io).
 - [To learn about the course and project requirements click here](https://lse-dsi.github.io/lse-ds105-course-notes/).
