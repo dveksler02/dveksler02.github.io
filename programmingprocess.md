@@ -21,6 +21,7 @@ Visual: pagination code
 ```Python
 
 #Code for generating first 50 Amazon URLs (500 reviews)
+
 for i in range(1, 50): # Generate URLs
    url = "https://www.amazon.com/Logitech-MX-Master-3S-Pale/product-reviews/B09HMKFDXC/ref=cm_cr_arp_d_viewopt_srt?ie=UTF8&reviewerType=all_reviews&sortBy=recent&pageNumber=" 
    + str(i) # Construct URL with page number
