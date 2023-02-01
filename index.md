@@ -10,11 +10,12 @@ layout: home
 {: .fs-9 }
 
 # Summary
-{: .fs-6 }
+{: .fs-8 }
 
 This website has been created to summarize our final project for DS105M. Our goal was to create a web scraping plug-in program to seamlessly extract Amazon customer reviews. To demonstrate our program, we extracted data on a computer mouse – the Logitech MX Master 3 and performed data analysis on its customer reviews. 
 
-**Context**
+# **Context**
+{: .fs-8 }
 
 In the 21st century business-to-consumer industry, no company has had as strong of an influence on reshaping the competitive landscape as Amazon, vastly expediting the transition from brick-and-mortar to ecommerce dependency. With an average of 200 million unique visitors per month and over 6 million worldwide sellers, Amazon’s sheer size allows it to maintain an ever-growing grip over the ecommerce industry. 
 
