@@ -1,4 +1,4 @@
-title: Amazon Web Scrapeer Tool - DS105M
+title: Amazon Review Web Scraping
 description: LSE DS105M 2022/2023 Final Project
 theme: just-the-docs
 
@@ -6,3 +6,5 @@ url: https://just-the-docs.github.io
 
 aux_links:
   Template Repository: https://github.com/dveksler02/dveksler02.github.io
+
+color_scheme: dark
