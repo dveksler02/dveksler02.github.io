@@ -8,3 +8,7 @@ aux_links:
   View Our Repository: https://github.com/dveksler02/dveksler02.github.io
 
 color_scheme: dark
+
+navigation: 
+- {file: index.md, title: Home}
+- {file: readme.md, title: Next}
