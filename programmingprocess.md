@@ -58,8 +58,9 @@ With an established connection, we were able to start pulling our relevant data.
         
         single_review = {'Reviewer Name': username, 'Star Rating': rating, 
                          'Review': review, 'Review Dates': review_date} #Creates and stores data into a dictionary
-        all_reviews.append(single_review) #Appends each new variable into the dictionary
+        all_reviews.append(single_review) #Combines variables in dictionaries by appending
 
+df = pd.DataFrame(all_reviews) # Converts dictionaries into a pandas data frame
 ```
 </div>
 
@@ -70,8 +71,6 @@ Each group of data variables per review was appended into its own dictionary. Th
 
 While we were able to pull the relevant data with Beautiful Soup, much of the data came with additional HTML code that we did not need. Because of this, we had to come up with unique cleaning solutions for each data variable. This table showcases the before and after cleaning for each variable:
 
-Visual: Table
-
 | Data Variable   | Uncleaned                                                                  | Cleaned                                        |
 |:----------------|:---------------------------------------------------------------------------|:-----------------------------------------------|
 | Reviewer Name   | ```<span class="a-profile-name">ak01</span>   ```                          | ak01                                           |
@@ -79,27 +78,68 @@ Visual: Table
 | Review Text     | ```...<span>I cannot comment ... I got it through work.<br/><br/>...```    | "I cannot comment ... I got it through work."  |
 | Review Date     | ```...data-hook="review-date">Reviewed in ... on December 7, 2022</span>```| December 7, 2022                               | 
 
-
-
-
-
 **Reviewer Name:** For this variable, the only issue was the additional HTML code captured in the first 29 and last 7 characters of each data point. These characters were eliminated using string slicing with Python Pandas. 
 
-Visual: code for reviewer name cleaning
+<div class="code-example" markdown="1">
+```python
+
+#Code for cleaning reviewer names
+
+df['Reviewer Name'] = df['Reviewer Name'].str[29:-7] #slices first 29 and last 7 characters in the string
+
+```
+</div>
 
 **Star Rating:** Like reviewer name, the issue we faced here was the additional HTML code captured in the first 25 and last 24 characters, which were eliminated using string slicing. We also converted the rating into an integer so it can be used for data analysis in the future. This was the variable for which we had to manipulate the type as the rest were already strings.
 
-Visual: code for star rating cleaning
+<div class="code-example" markdown="1">
+```python
+
+#Code for cleaning star ratings
+
+df['Star Rating'] = df['Star Rating'].str[25:-24] #slices first 29 and last 7 characters in the string
+df['Star Rating'] = df['Star Rating'].astype(int) #Converts type from string to integer
+
+```
+</div>
 
 **Reviews:** We eliminated the first 89 and last 15 characters using string slicing. We also replaced the HTML code that represented breaks in the text with an empty string (“”) so the text would not be interrupted by HTML. This way the text can be used without interruption for NLP. 
 
-Visual: code for reviews cleaning
+<div class="code-example" markdown="1">
+```python
+
+#Code for cleaning reviews
+
+df['Review'] = df['Review'].str[89:-15] #slices first 89 and last 15 character
+df['Review'] = df['Review'].str.replace('<br/>', '') #Replaces page breaks with an empty space to delete them from the cleaned text
+
+```
+</div>
 
 **Review Dates:** For this variable, the HTML strings in the front of the actual date were of different lengths, and the months of the dates are different lengths (march has 5 characters while December has 8, for example). To work around these challenges, we used Python Pandas to only keep the last 7 characters of each string using a stop argument. Then, we applied a lambda function to each element of the column. The lambda function first split the string on spaces, then used list slicing to grab the last three items of the list, and then joined those three items back into a single string by adding a space between each word. 
 
-Visual: code for review dates cleaning
+<div class="code-example" markdown="1">
+```python
+
+#Code for cleaning dates
+
+df['Review Dates'] = df['Review Dates'].str.slice(stop=-7) #Uses stop argument to slice last 7 characters
+df['Review Dates'] = df['Review Dates'].apply(lambda x: ' '.join(x.split(' ')[-3:])) 
+
+```
+</div>
 
 We also used a function to drop the whole row in case there were any data points that were blank. Because our data was extracted accurately, this only affected rows that had unusual review texts, as this was the only element that was unique in its structure (i.e., how many characters, page breaks, unique symbols, etc.). We felt it was important to delete the entire row so each entry can be complete for any kind of data analysis or visualization. 
+
+<div class="code-example" markdown="1">
+```python
+
+#Drops rows with empty data variables
+
+df.dropna(axis=0, how='any', inplace=True)
+
+```
+</div>
 
 ----
 
