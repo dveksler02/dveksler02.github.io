@@ -29,3 +29,12 @@ For easiest practice, download files as IPYNB and open them in Google Colab.
 {: .fs-7 }
 - [Click here to access our NLP Sentiment Analysis code](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 - [Click here to access our NLP word cloud code](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-wordclouds-DS105.ipynb)
+
+
+
+
+
+
+
+
+![LSE Logo](./img/LSE_Logo.svg.png)
