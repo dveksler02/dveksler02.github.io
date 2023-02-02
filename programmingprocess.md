@@ -42,7 +42,26 @@ for url in list_of_urls: # Define API key and URL parameters
 
 With an established connection, we were able to start pulling our relevant data. From each review, we wanted to pull the reviewer name, the star rating, review body, and review date, which we would eventually store into a pandas data frame. After manually identifying the relevant HTML for each data variable, we created an inner loop that used beautiful soup to extract the data for each review, running ten at a time for each URL and then moving on to the next page. 
 
-Visual: show inner for loop 
+<div class="code-example" markdown="1">
+```python
+#tedxt here
+
+    just_the_right_div = soup.find("div", attrs={"id": "cm_cr-review_list"})
+    all_review_divs = just_the_right_div.find_all("div", attrs={"data-hook": "review"})
+
+    for review_div in all_review_divs:
+        username     = review_div.find("span", class_="a-profile-name")
+        rating       = review_div.find("span", {"class": "a-icon-alt"})
+        review       = review_div.find("span", {"data-hook": "review-body"})
+        review_date  = review_div.find("span", {"class": "a-size-base a-color-secondary review-date"})
+        
+        single_review = {"name": username, "review_date": review_date}
+        single_review = {'Reviewer Name': username, 'Star Rating': rating, 
+                         'Review': review, 'Review Dates': review_date}
+        all_reviews.append(single_review)
+
+```
+</div>
 
 Each group of data variables per review was appended into its own dictionary. These dictionaries were then combined and converted into a pandas data frame, making it easy to conduct further cleaning. The dictionaries were structured so the data would fit naturally into a two-dimensional matrix with each column representing a new data variable once converted into a pandas data frame. 
 
