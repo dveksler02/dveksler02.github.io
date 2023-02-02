@@ -3,12 +3,14 @@ title: 1. Home
 layout: home
 ---
 
-![Amazon Logo](https://github.com/dveksler02/dveksler02.github.io/blob/main/img/amazon-website%5E2000%5Eamazon-logo-900.png)
+![Amazon Logo](./img/amazon-website^2000^amazon-logo-900.png)
 
 # **Summary**
 {: .fs-7 }
 
 This website has been created to showcase our final project for DS105M. Our goal was to create a web scraping plug-in program to seamlessly extract Amazon customer reviews. To demonstrate our program, we extracted data on a computer mouse – the Logitech MX Master 3 and performed data analysis on its customer reviews. 
+
+![Logitech Mouse](.img/Logitech-MX-Master-3.jpg)
 
 # **Context**
 {: .fs-7 }
