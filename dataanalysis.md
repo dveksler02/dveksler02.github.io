@@ -75,7 +75,10 @@ This is the WordCloud generated from all the reviews, it shows the most frequent
 Due to the J-distribution of the ratings, to help potential buyers to understand more about the product that cannot be seen on Amazon, we generated two separate Word Clouds one containing positive aspects and the other negative. This helps customers to learn about the positive and negative aspects of the product in order to aid their purchasing descions. 
 
 ![WordCloud](./img/negative_wordcloud.png.png)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/08062ea73c43998fb78d926a9fceda121ed80097/python/Star_Rating_DS105.ipynb)
+
 ![WordCloud](./img/positive_wordcloud.png.png)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/08062ea73c43998fb78d926a9fceda121ed80097/python/Star_Rating_DS105.ipynb)
 
 
 
