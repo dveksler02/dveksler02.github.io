@@ -23,6 +23,7 @@ The quickest identifiable feature of every review is its star rating which is on
 ![Boxplot](./img/Boxplot_DS105.png)  
 
 While investigating our dataset we realized that the data we were looking at was one dimensional in nature, so this meant that exploring correlation between a feature and star-rating was practically impossible as we did not have two independent variables to utilize. With these limitations, we found methods of analysis and visualization for data with just one dimension. This led us to creating code to visualize our data in the form of boxplots which look at the star rating of reviews under instances in which a specific keyword is mentioned and above each respective boxplot we can see the number of reviews in which the keyword was mentioned. We picked these words as our key words because they were identified as the main features on the Amazon product listing of the mouse.  
+
 Further looking into the visualization of our data it is evident to see by the central tendency or distribution of median rating (specified by the bold horizontal line) that our data has a J-shaped distribution with a majority of 4- or 5- star reviews. This reality is further strengthened both by the spread within our boxplots which can be seen through the interquartile ranges in most cases being around 4-5 rating and that in some cases outliers exist in where the rating is 1 or 2 indicating that instances of users rating the Logitech mouse low are in fact quite rare when certain keywords are mentioned in the review.  
 
 # **Histogram**
