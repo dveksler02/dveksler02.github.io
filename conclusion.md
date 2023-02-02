@@ -38,3 +38,19 @@ df_complete = pd.concat([df, df2, df3, df4, df5], axis=0)
 Another challenge we faced was finding the right HTML source code for our variables to prevent our data table skewing from different starting points when being called with the soup.find_all() function. For example, the reviewer name data variable included the top reviews section, which was a repeat of reviews that Amazon wanted to highlight. Review dates, however, started with the most recent review, which was the point at which we wanted our data table to start. After some trial and error, we were able to identify HTML source code for each data variable which had the same starting point to avoid the skewing issue.
 
 Data cleaning was not a one size fits all solution for our data variables. For some data variables we were able to rely uniquely on the string slicing function in Python to clean it up, but for others like review dates we had to get more creative. 
+
+# **Data Analysis Challenges:**
+{: .fs-7 }
+
+ABHI TEXT HERE
+
+# **NLP Analysis Challenges:**
+{: .fs-7 }
+
+VANESSA TEXT HERE
+
+# **Programming and Data Wrangling Challenges:**
+{: .fs-7 }
+
+
+
