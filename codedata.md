@@ -11,7 +11,7 @@ For easiest practice, download files as IPYNB and open them in Google Colab.
 
 # **Collection & Cleaning Code**
 {: .fs-7 }
-**- [Click here to access our Plug-In Program](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Plug_In_Program.ipynb)**
+- **[Click here to access our Plug-In Program](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Plug_In_Program.ipynb)**
 - [Click here to access our main code for the Logitech mouse](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Main_Code.ipynb)
 - [Click here to access our cleaning code for the Logitech mouse](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Cleaning_Code.ipynb)
 
