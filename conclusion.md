@@ -24,6 +24,8 @@ list_of_urls4 = []
 list_of_urls5 = []
 ```
 </div>
+
+<div class="code-example" markdown="1">
 ```python
 # Code for concatenating the dataframes for each group of 50 reviews
 
