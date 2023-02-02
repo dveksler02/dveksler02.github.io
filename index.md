@@ -2,12 +2,13 @@
 title: 1. Home
 layout: home
 ---
-# **Introduction**
-{: .fs-7 }
 
 This website is for educational and class presentation purposes only and not intended for professional use. 
 
 ![Amazon Logo](./img/amazon-website^2000^amazon-logo-900.png)
+
+# **Introduction**
+{: .fs-7 }
 
 # **Summary**
 {: .fs-7 }
