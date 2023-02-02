@@ -44,8 +44,8 @@ The main issues and challenges faced within the data analysis process stemmed fr
 
 # **NLP Analysis Challenges:**
 {: .fs-7 }
-
-VANESSA TEXT HERE
+ 
+The main challenge we faced is the selection bias of the data we are using for NPL analysis: the most reviews are all 5 stars because those who usually rate and leave comment are satisfied with the product. This skewed distribution of amazon product reviews affects the accuracy of our analysis as we are more biased towards positive aspects of the mouse than the negatives. Furthermore, the customers’ ratings were subjective as they tend to give a higher rating than what they actually think of the product, hence we used sentiment intensity analyzer to score the review texts to get a more accurate sentiment score and compared the two distributions of star ratings and sentiment scores.   
 
 # **Conclusion:**
 {: .fs-7 }
