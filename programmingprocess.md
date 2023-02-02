@@ -140,6 +140,7 @@ df.dropna(axis=0, how='any', inplace=True)
 ```
 </div>
 
+
 ----
 
 - [For more information on ScraperAPI and their services, please visit their website by clicking here](https://www.scraperapi.com).
