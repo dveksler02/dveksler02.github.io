@@ -53,12 +53,12 @@ While we were able to pull the relevant data with Beautiful Soup, much of the da
 
 Visual: Table
 
-| head1        | head two          | three | head1        | head two          | three |
-|:-------------|:------------------|:------|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
-| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
-| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
-| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
+| Data Variable   | Uncleaned                                   | Cleaned          |
+|:----------------|:--------------------------------------------|:-----------------|
+| Reviewer Name   | "<span class="a-profile-name">ak01</span>!" | ak01             |
+| ok              | good swedish fish.                          | nice             |
+| ok              | good swedish fish                           | nice             |
+| ok              | good swedish fish                           | nice             | 
 
 
 
