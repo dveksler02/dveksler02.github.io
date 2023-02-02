@@ -3,9 +3,11 @@ title: 3. Data Exploration & Analysis
 layout: home
 ---
 
-Hello World
+Descriptive Data Analytics:
 
+The dataset summarizing Logitech MX Master 3 Amazon reviews is a two-dimensional matrix with 4 data elements representing each column, and 2,560 unique reviews representing each row. 
 
+| **Data Dimensions**                                          |
 | Rows - Data Elements       | Columns - Review Count          |
 |:---------------------------|:--------------------------------|
 |  4                         |  2,560                          |
