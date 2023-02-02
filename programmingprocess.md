@@ -49,9 +49,21 @@ Each group of data variables per review was appended into its own dictionary. Th
 # **Cleaning**
 {: .fs-7 }
 
-While we were able to pull the relevant data with Beautiful Soup, much of the data came with additional HTML syntax that we did not need. Because of this, we had to come up with unique cleaning solutions for each data variable. This table showcases the before and after cleaning for each variable:
+While we were able to pull the relevant data with Beautiful Soup, much of the data came with additional HTML code that we did not need. Because of this, we had to come up with unique cleaning solutions for each data variable. This table showcases the before and after cleaning for each variable:
 
 Visual: Table
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+
+
+
+
 
 **Reviewer Name:** For this variable, the only issue was the additional HTML code captured in the first 29 and last 7 characters of each data point. These characters were eliminated using string slicing with Python Pandas. 
 
