@@ -15,23 +15,19 @@ At first, the processing power required to run our program was simply too high, 
 
 <div class="code-example" markdown="1">
 ```python
-
 # Code for creating lists of URLs, each storing 50 with the exception of the last which stores 61 (for 261 reviews overall)
+
 list_of_urls = []
 list_of_urls2 = []
 list_of_urls3 = []
 list_of_urls4 = []
 list_of_urls5 = []
-
 ```
 </div>
-
 ```python
-
 # Code for concatenating the dataframes for each group of 50 reviews
 
 df_complete = pd.concat([df, df2, df3, df4, df5], axis=0)
-
 ```
 </div>
 
