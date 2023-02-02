@@ -31,7 +31,7 @@ Once we created a list of URLs, we needed to establish a connection between our 
 
 <div class="code-example" markdown="1">
 ```python
-#Scrape URLs using the ScraperAPI
+#Code for scraping URLs using the ScraperAPI
 
 for url in list_of_urls: # Define API key and URL parameters
    params = {'api_key': "INSERT-API-KEY-HERE", 'url': url} # Send request to API with parameters
@@ -44,21 +44,21 @@ With an established connection, we were able to start pulling our relevant data.
 
 <div class="code-example" markdown="1">
 ```python
-#tedxt here
+#Code for extracting data for each data variable for our data set
 
-    just_the_right_div = soup.find("div", attrs={"id": "cm_cr-review_list"})
-    all_review_divs = just_the_right_div.find_all("div", attrs={"data-hook": "review"})
+    just_the_right_div = soup.find("div", attrs={"id": "cm_cr-review_list"}) #Finds div with Beautiful Soup
+    all_review_divs = just_the_right_div.find_all("div", attrs={"data-hook": "review"}) #Finds all reviews
 
     for review_div in all_review_divs:
+        # Extracts specific data for each of our 4 data variables
         username     = review_div.find("span", class_="a-profile-name")
         rating       = review_div.find("span", {"class": "a-icon-alt"})
         review       = review_div.find("span", {"data-hook": "review-body"})
         review_date  = review_div.find("span", {"class": "a-size-base a-color-secondary review-date"})
         
-        single_review = {"name": username, "review_date": review_date}
         single_review = {'Reviewer Name': username, 'Star Rating': rating, 
-                         'Review': review, 'Review Dates': review_date}
-        all_reviews.append(single_review)
+                         'Review': review, 'Review Dates': review_date} #Creates and stores data into a dictionary
+        all_reviews.append(single_review) #Appends each new variable into the dictionary
 
 ```
 </div>
