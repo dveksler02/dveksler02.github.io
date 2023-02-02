@@ -3,12 +3,12 @@ title: 4. Challenges & Conclusion
 layout: home
 ---
 
-**Scraping Access Challenges:**
+# **Scraping Access Challenges:**
 {: .fs-7 }
 
 The first challenge we ran into was gaining access to the site without interference. It is in Amazon’s best interest to prevent web scraping capabilities so they can keep users on their site, so the company uses a variety of anti-scraping measures, including varying web structures and blocking unusual requests such as those with abnormal quantities or coming from bots. Thankfully, the web structure of the customer reviews section is mostly similar on every Amazon product, so we were able to work around that first hurdle. As for avoiding our IP address being blocked, we worked around this challenge by running requests through ScraperAPI which rotated IP addresses with each request. Using an API, however, increased the processing power to run our code significantly which led to us having to employ additional work arounds so our program could run seamlessly.
 
-**Programming and Data Wrangling Challenges:**
+# **Programming and Data Wrangling Challenges:**
 {: .fs-7 }
 
 At first, the processing power required to run our program was simply too high, especially for a browser-based Python IDE like Google Colab. On top of requesting via an API, the program would have to pull four data elements for ten reviews for each URL at a time, repeat this process for 261 unique URLs, and then store all the information into separate dictionaries. To alleviate the pressure, we separated the links into smaller groups of URLs and had the program iterate through 50 URLs at a time instead of 261 and concatenate the extracted dictionaries into a data frame at the very end. Finding the optimal group size for the groups of URLs took some trial and error, but we find that groups of 50 took the computer anywhere from 3 to 5 minutes to process and export an uncleaned CSV.
