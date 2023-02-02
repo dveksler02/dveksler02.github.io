@@ -40,7 +40,7 @@ Data cleaning was not a one size fits all solution for our data variables. For s
 # **Data Analysis Challenges:**
 {: .fs-7 }
 
-ABHI TEXT HERE
+The main issues or challenges faced within the data analysis process stemmed from creating multiple boxplots to show the Star-rating of reviews in instances where a specific keyword was mentioned. The challenge within this data-analysis was twofold, firstly many cases of debugging was required when using the several nested loops and string manipulations to rectify any inconsistent data types. Secondly, it was essential to be able to understand which loops to utilize to iterate through each row of the dataframe. This meant using unfamiliar panda functions namely '.iterrows()' and it took time to find solutions on forums like StackOverflow. However, after creating the first python program for boxplots, using the plotnine library with lists became relatively easy with similar syntax and processes being used to create the histogram and bar charts.
 
 # **NLP Analysis Challenges:**
 {: .fs-7 }
@@ -50,10 +50,5 @@ VANESSA TEXT HERE
 # **Conclusion:**
 {: .fs-7 }
 
-Within our project scope, we had two goals we wanted to accomplish when working on this project. The first and primary goal was to create a plug-in program that seamlessly and efficiently extracts Amazon customer reviews and exports them into a CSV. The second goal was to illustrate a use case of how our program can be used for further purposes, and we wanted to accomplish this by creating summary statistics and data analysis on reviews of the Logitech MX Master 3.
 
-We can confidently say that we accomplished our first goal in its entirety. With our plug-in program, anybody can input a link to an Amazon Customer Reviews page, configure the number of groups to the review count, and seamlessly output a cleaned CSV file with all the review data. This program runs best on Google Colab as we developed our code on it. This factor further accomplishes our goal because of the accessible nature of a Google IDE; to use our program, you do not even need to have Python installed on your computer.
 
-While we were able to create descriptive statistics and run some analysis on the Logitech MX Master 3, many of our findings were inconclusive. While there were many factors that limited our capabilities as analysts, the biggest was the J-shaped distribution. With a lack of variables in each category but 5 stars, it is difficult for us to gauge the accuracy of any model we attempt to create. 
-
-For anybody interested in extracting customer reviews from Amazon for whatever purpose, we highly recommend you try our plug-in model! It is highly versatile and easy to use! Thank you for browsing our website.  
