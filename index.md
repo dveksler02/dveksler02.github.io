@@ -3,7 +3,7 @@ title: 1. Home
 layout: home
 ---
 
-![Amazon Logo](dveksler02.github.io/img/amazon-website^2000^amazon-logo-900.png)
+![Amazon Logo](https://github.com/dveksler02/dveksler02.github.io/blob/main/img/amazon-website%5E2000%5Eamazon-logo-900.png)
 
 # **Summary**
 {: .fs-7 }
