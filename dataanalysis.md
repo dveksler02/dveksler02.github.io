@@ -16,4 +16,4 @@ The dataset summarizing Logitech MX Master 3 Amazon reviews is a two-dimensional
 {: .fs-7 }
 
 The quickest identifiable feature of every review is its star rating which is on a higher-is-better 5-point scale. The distribution for this product listing, and nearly every reputable listing on Amazon for that matter, is J-shaped, with an overwhelming majority of ratings falling in the 5- and 4-star category ranges.
-![Histogram](/dveksler02/dveksler02.github.io/img/Histogram_DS105.png)
+![Histogram](/img/Histogram_DS105.png)
