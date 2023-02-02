@@ -10,7 +10,19 @@ The dataset summarizing Logitech MX Master 3 Amazon reviews is a two-dimensional
 
 | Rows - Data Elements       | Columns - Review Count          |
 |:---------------------------|:--------------------------------|
-|  4                         |  2,549                          |
+|  2,549                     |  4                              | 
+
+# **Data Appearance**
+{: .fs-7 }
+| Reviewer Name | Star Rating | Review                                                               | Review Dates      |
+|:--------------|:------------|:---------------------------------------------------------------------|:------------------|
+| ak01          | 4           | My favorite mouse of all time.                                       | December 7, 2022  |
+| KC5           | 5           | I bought this as an alternative to my usual trackball and like it.   | October 31, 2022  |
+| Joey          | 2           | Sensor of mouse isn't working properly from day one                  | September 13, 2022|
+| PE            | 5           | I love the shape of the mouse and how the fit just feels so natural. | November 15, 2022 |
+| Johnny        | 5           | Super quiet clicks. LOVE IT!!!                                       | August 11, 2022   |
+
+This is the general appearance of the cleaned csv file of all of our data with 4 columns and 2539 rows, with the most relevant variable star rating ranging from values of 1 to 5, Review Dates starting from Oct 27th 2019 to present and Review Length technically ranging up to 5000 words.
 
 # **Descriptive Data Analytics**
 {: .fs-7 }
