@@ -21,7 +21,7 @@ The quickest identifiable feature of every review is its star rating which is on
 {: .fs-7 }
 
 ![Boxplot](./img/Boxplot_DS105.png)
-<a href="[https://github.com/dveksler02/dveksler02.github.io/blob/5761f724e5f03d715ff0f387236c83ea6dcb92db/python/Boxplots_DS105.ipynb]"> boxplot </a>
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/4032316c3ec44a54f1f7a536f9adbd3ba852d03f/python/Boxplots_DS105.ipynb)
 
 
 
