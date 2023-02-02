@@ -12,8 +12,8 @@ For easiest practice, download files as IPYNB and open them in Google Colab.
 # **Collection & Cleaning Code**
 {: .fs-7 }
 **- [Click here to access our Plug-In Program](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Plug_In_Program.ipynb)**
-- [Click here to access our main code](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Main_Code.ipynb)
-- [Click here to access our cleaning code](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Cleaning_Code.ipynb)
+- [Click here to access our main code for the Logitech mouse](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Main_Code.ipynb)
+- [Click here to access our cleaning code for the Logitech mouse](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/DS105M_Cleaning_Code.ipynb)
 
 # **Data Analysis Code**
 {: .fs-7 }
@@ -23,7 +23,7 @@ For easiest practice, download files as IPYNB and open them in Google Colab.
 
 # **CSV File**
 {: .fs-7 }
-[Click here to access our bar chart code](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/amazon_reviews_cleaned.csv)
+[Click here to access our Logitech CSV file (Sample of what CSV outputs look like)](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/amazon_reviews_cleaned.csv)
 
 # **Natural Language Processing Code**
 {: .fs-7 }
