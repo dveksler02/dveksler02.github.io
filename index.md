@@ -7,9 +7,6 @@ This website is for educational and class presentation purposes only and not int
 
 ![Amazon Logo](./img/amazon-website^2000^amazon-logo-900.png)
 
-# **Introduction**
-{: .fs-7 }
-
 # **Summary**
 {: .fs-7 }
 
