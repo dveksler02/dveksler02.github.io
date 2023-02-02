@@ -14,42 +14,11 @@ layout: home
 # **Collection**
 {: .fs-7 }
 
----
-
-## Syntax highlighted code blocks
-
-Use Jekyll's built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name:
-
-<div class="code-example" markdown="1">
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-</div>
-{% highlight markdown %}
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-{% endhighlight %}
-
----
-
 Amazon reviews come in sets of ten per page in order of date. At the time of our data retrieval, the Logitech mouse had 15,203 ratings and 2,606 reviews, which meant that we had 261 pages worth of reviews to paginate through. Every page’s URL is the same apart from the page number, so we labeled the page number as “i” and ran a for loop in the range of the page count. To ease the performance load on the program, we ran multiple loops in groups of 50 pages rather than keeping everything in one large loop. We kept the groups separate through the entire program until the very end where we concatenated our extracted data. While this makes our code less clean, it significantly lowers the minimum processing power to run the code, improving our program’s accessibility. 
-
----
-
-## Syntax highlighted code blocks
 
 <div class="code-example" markdown="1">
 ```python
-// Code for generating first 50 Amazon URLs (500 reviews)
+#Code for generating first 50 Amazon URLs (500 reviews)
 
 for i in range(1, 50): # Generate URLs
    url = "https://www.amazon.com/Logitech-MX-Master-3S-Pale/product-reviews/B09HMKFDXC/ref=cm_cr_arp_d_viewopt_srt?ie=UTF8&reviewerType=all_reviews&sortBy=recent&pageNumber=" 
@@ -60,7 +29,14 @@ for i in range(1, 50): # Generate URLs
 
 Once we created a list of URLs, we needed to establish a connection between our program and each URL via an import from the Python Requests library. Because our program is extracting data from over 2,000 reviews, we risk having our IP address blocked from making such a high quantity of requests. This is especially true for a website like Amazon which is not web-scraper friendly. To avoid issues with IP blocks, captchas, and proxies, we requested data via a third-party API called ScraperAPI which rotates through IP addresses while iterating through each URL within our list of URLs. This became the outer loop within our nested for loop. 
 
-Visual: Request being made with our API - API key blocked out
+<div class="code-example" markdown="1">
+```python
+for url in list_of_urls: # Define API key and URL parameters
+   params = {'api_key': "1205eb601fd755b637dd3d6946635d61", 'url': url} # Send request to API with parameters
+   response = requests.get('http://api.scraperapi.com/', params=urlencode(params)) # Use BeautifulSoup to parse response
+   soup = BeautifulSoup(response.text, 'html.parser')
+```
+</div>
 
 With an established connection, we were able to start pulling our relevant data. From each review, we wanted to pull the reviewer name, the star rating, review body, and review date, which we would eventually store into a pandas data frame. After manually identifying the relevant HTML for each data variable, we created an inner loop that used beautiful soup to extract the data for each review, running ten at a time for each URL and then moving on to the next page. 
 
