@@ -16,7 +16,6 @@ This website is for educational and class presentation purposes only and not int
 This website has been created to showcase our final project for DS105M. Our goal was to create a web scraping plug-in program to seamlessly extract Amazon customer reviews. To demonstrate our program, we extracted data on a computer mouse – the Logitech MX Master 3 and performed data analysis on its customer reviews. 
 
 ![Logitech Mouse](./img/Logitech-MX-Master-3.png)
-
 # **Context**
 {: .fs-7 }
 
