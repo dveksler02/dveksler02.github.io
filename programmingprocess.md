@@ -53,13 +53,12 @@ While we were able to pull the relevant data with Beautiful Soup, much of the da
 
 Visual: Table
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
+| head1        | head two          | three | head1        | head two          | three |
+|:-------------|:------------------|:------|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
+| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
+| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
+| ok           | good swedish fish | nice  | ok           | good swedish fish | nice  |
 
 
 
