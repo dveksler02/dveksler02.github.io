@@ -112,6 +112,8 @@ Now printing the first 5 rows we can see that each review has a column on star r
 Visualzing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
 
 ![Bar Chart-Sentiment](./img/barchart_sentiment.png)
+https://raw.githubusercontent.com/dveksler02/dveksler02.github.io/main/img/barchart_sentiment.png![image](https://user-images.githubusercontent.com/100515372/216474992-95f3450b-4194-4177-ada5-19fb2fdadf25.png)
+
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 
 
