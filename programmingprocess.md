@@ -128,7 +128,7 @@ df['Review Dates'] = df['Review Dates'].apply(lambda x: ' '.join(x.split(' ')[-3
 ```
 </div>
 
-We also used a function to drop the whole row in case there were any data points that were blank. Because our data was extracted accurately, this only affected rows that had unusual review texts, as this was the only element that was unique in its structure (i.e., how many characters, page breaks, unique symbols, etc.). We felt it was important to delete the entire row so each entry can be complete for any kind of data analysis or visualization. 
+We also used an argument to drop the whole row in case there were any data points that were blank. Because our data was extracted accurately, this only affected rows that had unusual review texts, as this was the only element that was unique in its structure (i.e., how many characters, page breaks, unique symbols, etc.). We felt it was important to delete the entire row so each entry can be complete for any kind of data analysis or visualization. 
 
 <div class="code-example" markdown="1">
 ```python
