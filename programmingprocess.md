@@ -5,11 +5,10 @@ layout: home
 
 # **Framework**
 {: .fs-7 }
-**
-1.	Create a for loop to paginate through the pages of URLs with Amazon reviews
-2.	Establish a connection by running a request via Scraper API
-3.	Source relevant HTML code for each data feature
-4.	Store into a Python Pandas data frame**
+1.	**Create a for loop to paginate through the pages of URLs with Amazon reviews**
+2.	**Establish a connection by running a request via Scraper API**
+3.	**Source relevant HTML code for each data feature**
+4.	**Store into a Python Pandas data frame**
 
 # **Collection**
 {: .fs-7 }
