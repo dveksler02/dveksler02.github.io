@@ -31,8 +31,10 @@ Once we created a list of URLs, we needed to establish a connection between our 
 
 <div class="code-example" markdown="1">
 ```python
+#Scrape URLs using the ScraperAPI
+
 for url in list_of_urls: # Define API key and URL parameters
-   params = {'api_key': "1205eb601fd755b637dd3d6946635d61", 'url': url} # Send request to API with parameters
+   params = {'api_key': "INSERT-API-KEY-HERE", 'url': url} # Send request to API with parameters
    response = requests.get('http://api.scraperapi.com/', params=urlencode(params)) # Use BeautifulSoup to parse response
    soup = BeautifulSoup(response.text, 'html.parser')
 ```
