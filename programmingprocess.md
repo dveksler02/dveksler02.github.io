@@ -53,12 +53,12 @@ While we were able to pull the relevant data with Beautiful Soup, much of the da
 
 Visual: Table
 
-| Data Variable   | Uncleaned                                         | Cleaned          |
-|:----------------|:--------------------------------------------------|:-----------------|
-| Reviewer Name   | ```"<span class="a-profile-name">ak01</span>!"``` | ak01             |
-| ok              | good swedish fish.                                | nice             |
-| ok              | good swedish fish                                 | nice             |
-| ok              | good swedish fish                                 | nice             | 
+| Data Variable   | Uncleaned                                                                  | Cleaned                                        |
+|:----------------|:---------------------------------------------------------------------------|:-----------------------------------------------|
+| Reviewer Name   | ```<span class="a-profile-name">ak01</span>   ```                          | ak01                                           |
+| Star Rating     | ```<span class="a-icon-alt">4.0 out of 5 stars</span> ```                  | 4                                              |
+| Review Text     | ```...<span>I cannot comment ... I got it through work.<br/><br/>...```    | "I cannot comment ... I got it through work."  |
+| Review Date     | ```...data-hook="review-date">Reviewed in ... on December 7, 2022</span>```| December 7, 2022                               | 
 
 
 
