@@ -20,7 +20,9 @@ The quickest identifiable feature of every review is its star rating which is on
 # **Boxplots**
 {: .fs-7 }
 
-![Boxplot](./img/Boxplot_DS105.png)  
+![Boxplot](./img/Boxplot_DS105.png)
+https://github.com/dveksler02/dveksler02.github.io/blob/5761f724e5f03d715ff0f387236c83ea6dcb92db/python/Boxplots_DS105.ipynb.
+
 
 While investigating our dataset we realized that the data we were looking at was one dimensional in nature, so this meant that exploring correlation between a feature and star-rating was practically impossible as we did not have two independent variables to utilize. With these limitations, we found methods of analysis and visualization for data with just one dimension. This led us to creating code to visualize our data in the form of boxplots which look at the star rating of reviews under instances in which a specific keyword is mentioned and above each respective boxplot we can see the number of reviews in which the keyword was mentioned. We picked these words as our key words because they were identified as the main features on the Amazon product listing of the mouse.  
 
@@ -30,6 +32,8 @@ Further looking into the visualization of our data it is evident to see by the c
 {: .fs-7 }
 
 ![Histogram](./img/Histogram_DS105.png)
+https://github.com/dveksler02/dveksler02.github.io/blob/5761f724e5f03d715ff0f387236c83ea6dcb92db/python/Historgram_DS105.ipynb
+
 
 As seen in the histogram above the distribution of the word lengths has a positive skew with the average number of words being near the 0-to-20-word count. While there is the argument this may not be useful for figuring out customer preferences as we have less data to work with, there is the caveat that the shorter comments will only contain the most important criticisms or compliments about the Logitech mouse. Below is an example of where a shorter review gives us a clearer indication of comments on the mouse which we can analyze as opposed to a longer comment: 
 | Reviewer Name   | Review                                                                     |
@@ -51,5 +55,6 @@ As seen in the histogram above the distribution of the word lengths has a positi
 {: .fs-7 }
 
 ![Bar Chart](./img/Star_Rating_DS105.png)
+https://github.com/dveksler02/dveksler02.github.io/blob/5761f724e5f03d715ff0f387236c83ea6dcb92db/python/Star_Rating_DS105.ipynb
 
 By looking at the distribution of star ratings in the form of bar charts (as seen above) it was evident to see that the spread of our data took the form of a J-shaped distribution characterised by a semi-large number of low values suddenly increasing in frequency with high 5-star ratings. This can be seen by the large peak towards the upper end of the distribution.  
