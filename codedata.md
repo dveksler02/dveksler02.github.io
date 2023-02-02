@@ -23,7 +23,7 @@ For easiest practice, download files as IPYNB and open them in Google Colab.
 
 # **CSV File**
 {: .fs-7 }
-[Click here to access our Logitech CSV file (Sample of what CSV outputs look like)](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/amazon_reviews_cleaned.csv)
+- [Click here to access our Logitech CSV file (Sample of what CSV outputs look like)](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/amazon_reviews_cleaned.csv)
 
 # **Natural Language Processing Code**
 {: .fs-7 }
