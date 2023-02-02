@@ -21,7 +21,8 @@ The quickest identifiable feature of every review is its star rating which is on
 {: .fs-7 }
 
 ![Boxplot](./img/Boxplot_DS105.png)
-https://github.com/dveksler02/dveksler02.github.io/blob/5761f724e5f03d715ff0f387236c83ea6dcb92db/python/Boxplots_DS105.ipynb.
+<a href="[https://github.com/dveksler02/dveksler02.github.io/blob/5761f724e5f03d715ff0f387236c83ea6dcb92db/python/Boxplots_DS105.ipynb]"> boxplot </a>
+
 
 
 While investigating our dataset we realized that the data we were looking at was one dimensional in nature, so this meant that exploring correlation between a feature and star-rating was practically impossible as we did not have two independent variables to utilize. With these limitations, we found methods of analysis and visualization for data with just one dimension. This led us to creating code to visualize our data in the form of boxplots which look at the star rating of reviews under instances in which a specific keyword is mentioned and above each respective boxplot we can see the number of reviews in which the keyword was mentioned. We picked these words as our key words because they were identified as the main features on the Amazon product listing of the mouse.  
