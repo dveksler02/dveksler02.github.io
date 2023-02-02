@@ -7,7 +7,7 @@ layout: home
 
 This website is for educational and class presentation purposes only and not intended for professional use. 
 
-![Amazon Logo](./img/amazon-website^2000^amazon-logo-900.png {width=40px height=400px})
+![Amazon Logo](./img/amazon-website^2000^amazon-logo-900.png)
 
 # **Summary**
 {: .fs-7 }
