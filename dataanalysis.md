@@ -10,7 +10,7 @@ The dataset summarizing Logitech MX Master 3 Amazon reviews is a two-dimensional
 
 | Rows - Data Elements       | Columns - Review Count          |
 |:---------------------------|:--------------------------------|
-|  4                         |  2,560                          |
+|  4                         |  2,549                          |
 
 # **Descriptive Data Analytics**
 {: .fs-7 }
