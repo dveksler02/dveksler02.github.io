@@ -1,5 +1,5 @@
 ---
-title: 2. Programming Process
+title: 2. P Process
 layout: home
 ---
 
