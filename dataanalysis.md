@@ -81,4 +81,37 @@ Due to the J-distribution of the ratings, to help potential buyers to understand
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/08062ea73c43998fb78d926a9fceda121ed80097/python/Star_Rating_DS105.ipynb)
 
 
+# **Sentiment Analysis**
+{: .fs-7 }
+
+We used the Sentiment Intensity Analyzer from NLTK to analyze and score customer reviews’ sentiments on a scale from –1 to 1, with –1 being the most negative and 1 absolutely positive. We found that most reviews’ sentiment are actually neutral rather than positive.  
+
+Now printing the first 5 rows we can see that each review has a column on star rating as well as the sentiment scores: positive, negative and neutral. 
+
+   Unnamed: 0 Reviewer Name  Star Rating  \
+0           0          ak01            4   
+1           1           KC5            5   
+2           2          Joey            2   
+3           3            PE            5   
+4           4        Johnny            5   
+
+                                              Review      Review Dates  \
+0  I cannot comment on the value of this mouse as...  December 7, 2022   
+1  Use for regular computer work and CAD. Works a...  December 6, 2022   
+2  This mouse is great from every perspective, bu...  December 5, 2022   
+3  This fully featured mouse is a real pleasure t...  December 5, 2022   
+4  I went from a 60g mouse to this thing and the ...  December 4, 2022   
+
+   Positive  Negative  Neutral  
+0     0.149     0.083    0.768  
+1     0.372     0.076    0.552  
+2     0.121     0.218    0.660  
+3     0.358     0.000    0.642  
+4     0.196     0.000    0.804  
+
+Visualzing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
+
+![Bar Chart-Sentiment](./img/barchart_sentiment.png)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
+
 
