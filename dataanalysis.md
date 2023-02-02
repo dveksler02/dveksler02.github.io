@@ -63,3 +63,19 @@ As seen in the histogram above the distribution of the word lengths has a positi
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/08062ea73c43998fb78d926a9fceda121ed80097/python/Star_Rating_DS105.ipynb)
 
 By looking at the distribution of star ratings in the form of bar charts (as seen above) it was evident to see that the spread of our data took the form of a J-shaped distribution characterised by a semi-large number of low values suddenly increasing in frequency with high 5-star ratings. This can be seen by the large peak towards the upper end of the distribution.  
+
+
+# **Word Clouds**
+{: .fs-7 }
+
+![WordCloud](./img/nplds.png)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-wordclouds-DS105.ipynb)
+This is the WordCloud generated from all the reviews, it shows the most frequent words describing the characteristics and features of the product mentioned in customer reviews. 
+
+Due to the J-distribution of the ratings, to help potential buyers to understand more about the product that cannot be seen on Amazon, we generated two separate Word Clouds one containing positive aspects and the other negative. This helps customers to learn about the positive and negative aspects of the product in order to aid their purchasing descions. 
+
+![WordCloud](./img/negative_wordcloud.png.png)
+![WordCloud](./img/positive_wordcloud.png.png)
+
+
+
