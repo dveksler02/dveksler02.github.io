@@ -11,7 +11,7 @@ This project was completed by David Veksler, Abhinav Vijayakumara, and Zixuan (V
 
 **David:** Worked on project scope, project planning, code to extract Amazon Reviews, code on cleaning the extracted data, finalized code for users that want to try the plug-in model, presentation tempelate, presentation text and visuals for week 8 and week 11, website configuration and design, website text and visuals, repository management and commits.  
 **Abhinav:** Worked on ___. 
-**Zixuan (Vanessa):** Worked on ____.
+**Zixuan (Vanessa):** Worked on natural language processing analysis and some data vizualization.
 
 
 # just-the-docs-template
