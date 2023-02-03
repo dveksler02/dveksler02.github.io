@@ -113,7 +113,9 @@ Now printing the first 5 rows we can see that each review has a column on star r
 | 0.196     | 0.000     | 0.804     |
 
 
-Visualizing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
+The difference between customer sentiments and star reviews are illustrated in the bar charts below. The one titled “Sentiment Analyzer” shows the reviews’ sentiment score while the one titled “Customer Ratings” shows the star ratings.
+
+In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
 
 ![Bar Chart-Sentiment](./img/Bar-NLP.png)
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
@@ -136,7 +138,7 @@ Using data.describe() function allows us to look at the statistical properties o
 | max  | 2558.000000 | 5.000000    |  1.000000    | 0.650000    | 1.000000  |
 
 
-Through comparing statistical properties of the two distributions using data.describe() function, we created two boxplots to summarize the statistical characteristics of both the sentiment scores of reviews and the customer ratings. This helps Amazon buyers who are thinking of buying a Logitech mouse and give them more information on the possible bias of star ratings which most buyers use as a reference of the quality of the product. We think the distribution of sentiment score ratings are a more accurate reflection of customer opinions.  
+Through comparing statistical properties of the two distributions using data.describe() function, we created two boxplots to summarize the statistical characteristics of both the sentiment scores of reviews and the customer ratings. This give Amazon buyers more information on the possible bias of star ratings which most buyers use as a reference of the quality of the product. 
 
 This is the boxplot for sentiment scores:
 
@@ -150,6 +152,6 @@ This is the boxplot for star ratings:
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 
  
-We can see the mean of the sentiment score distribution is roughly 0.75, contrasting with the star ratings distribution’s 5.0 (5/5). This suggests to the potential buyers that the overall satisfaction is still high, just not as high as the star ratings distribution, which is shown on the Amazon product page, shows.  
+The mean of the sentiment score distribution is roughly 0.75 while the star ratings distribution’s 5.0 (5/5). This suggests that the overall satisfaction is still high, just not as high as the star ratings distribution shown on the Amazon product page.  
  
-Another feature is the interquartile range (IQR) of the sentiment distribution is smaller than the ratings distribution, this suggests that the sentiment scores of the customers – the proxy for quality and satisfaction of the product – is very consistent. And as the IQR lies on the top part of the plot, it seems to suggest the product satisfaction rate is consistently good.
+Another feature is the interquartile range (IQR) of the sentiment distribution is smaller than the ratings distribution, this suggests that the sentiment scores of the customers – the proxy for quality and satisfaction of the product – is very consistent. And as the IQR lies on the top part of the plot, it suggest the product satisfaction rate is consistently good.
