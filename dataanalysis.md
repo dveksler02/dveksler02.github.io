@@ -116,10 +116,10 @@ Now printing the first 5 rows we can see that each review has a column on star r
 Visualizing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
 
 ![Bar Chart-Sentiment](./img/Bar-NLP.png)
-
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 
 ![Bar Chart-Star Ratings](./img/barchart-ratings.png)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 
 Using data.describe() function allows us to look at the statistical properties of the 2 distributions - ratings and sentiment scores. 
 
@@ -141,11 +141,13 @@ Through comparing statistical properties of the two distributions using data.des
 This is the boxplot for sentiment scores:
 {: .fs-7 }
 ![Bar Chart-Sentiment](./img/boxplot_sentiment.png)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 
 
 This is the boxplot for star ratings:
 {: .fs-7 }
 ![Bar Chart-Sentiment](./img/boxplot_ratings.png)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 
  
 We can see the mean of the sentiment score distribution is roughly 0.75, contrasting with the star ratings distribution’s 5.0 (5/5). This suggests to the potential buyers that the overall satisfaction is still high, just not as high as the star ratings distribution, which is shown on the Amazon product page, shows.  
