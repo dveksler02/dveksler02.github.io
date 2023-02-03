@@ -68,7 +68,8 @@ By looking at the distribution of star ratings in the form of bar charts (as see
 {: .fs-7 }
 
 ![WordCloud](./img/nplds.png)
-[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-wordclouds-DS105.ipynb)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-wordclouds-DS105.ipynb) 
+
 This is the WordCloud generated from all the reviews, it shows the most frequent words describing the characteristics and features of the product mentioned in customer reviews. 
 
 Due to the J-distribution of the ratings, to help potential buyers to understand more about the product that cannot be seen on Amazon, we generated two separate Word Clouds one containing positive aspects and the other negative. This helps customers to learn about the positive and negative aspects of the product in order to aid their purchasing descions. 
