@@ -89,22 +89,22 @@ We used the Sentiment Intensity Analyzer from NLTK to analyze and score customer
 Now printing the first 5 rows we can see that each review has a column on star rating as well as the sentiment scores: positive, negative and neutral.
 
 
-| Unnamed: | Reviewer Name| Star Rating  | 
-|:---------|:-------------|:-------------|
-| 0        | ak01         | 4            |
-| 1        | KC5          | 5            |
-| 2        | Joey         | 2            |
-| 3        | PE           | 5            |
-| 4        | Johnny       | 5            |
+| Unnamed: | Reviewer Name | Star Rating  | 
+|:---------|:--------------|:-------------|
+| 0        | ak01          | 4            |
+| 1        | KC5           | 5            |
+| 2        | Joey          | 2            |
+| 3        | PE            | 5            |
+| 4        | Johnny        | 5            |
 
 
-| Review                                            | Review Dates    | 
-|:--------------------------------------------------|:----------------|
-| I cannot comment on the value of this mouse as... | December 7, 2022|
-| Use for regular computer work and CAD. Works a... | December 6, 2022|
-| This mouse is great from every perspective, bu... | December 5, 2022|
-| This fully featured mouse is a real pleasure t... | December 5, 2022|
-| I went from a 60g mouse to this thing and the ... | December 4, 2022|
+| Review                                            | Review Dates     | 
+|:--------------------------------------------------|:-----------------|
+| I cannot comment on the value of this mouse as... | December 7, 2022 |
+| Use for regular computer work and CAD. Works a... | December 6, 2022 |
+| This mouse is great from every perspective, bu... | December 5, 2022 |
+| This fully featured mouse is a real pleasure t... | December 5, 2022 |
+| I went from a 60g mouse to this thing and the ... | December 4, 2022 |
 
 
 | Positive  | Negative  | Neutral   | 
