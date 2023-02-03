@@ -48,7 +48,6 @@ Further looking into the visualization of our data it is evident to see by the c
 ![Histogram](./img/Histogram_DS105.png)
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/08062ea73c43998fb78d926a9fceda121ed80097/python/Historgram_DS105.ipynb)
 
-
 As seen in the histogram above the distribution of the word lengths has a positive skew with the average number of words being near the 0-to-20-word count. While there is the argument this may not be useful for figuring out customer preferences as we have less data to work with, there is the caveat that the shorter comments will only contain the most important criticisms or compliments about the Logitech mouse. Below is an example of where a shorter review gives us a clearer indication of comments on the mouse which we can analyze as opposed to a longer comment: 
 
 
