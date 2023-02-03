@@ -86,7 +86,16 @@ Due to the J-distribution of the ratings, to help potential buyers to understand
 
 We used the Sentiment Intensity Analyzer from NLTK to analyze and score customer reviews’ sentiments on a scale from –1 to 1, with –1 being the most negative and 1 absolutely positive. We found that most reviews’ sentiment are actually neutral rather than positive.  
 
-Now printing the first 5 rows we can see that each review has a column on star rating as well as the sentiment scores: positive, negative and neutral. 
+Now printing the first 5 rows we can see that each review has a column on star rating as well as the sentiment scores: positive, negative and neutral.
+
+
+| Unnamed: | Reviewer Name| Star Rating                      | Review Dates       |
+|:---------|:-------------|:-------------|:-------------------|
+| 0        | ak01         | 4                                | December 7, 2022   |
+| 1        | KC5          | 5           | October 31, 2022   |
+| 2        | Joey         | 2               | September 13, 2022 |
+| 3        | PE           | 5    | November 15, 2022  |
+| 4        | Johnny       | 5                              | August 11, 2022    |
 
    Unnamed: 0 Reviewer Name  Star Rating  \
 0           0          ak01            4   
@@ -112,6 +121,7 @@ Now printing the first 5 rows we can see that each review has a column on star r
 Visualzing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
 
 ![Bar Chart-Sentiment](./img/Bar-NLP.png)
+
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
 
 
