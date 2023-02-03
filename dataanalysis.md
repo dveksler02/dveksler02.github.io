@@ -149,7 +149,7 @@ This is the boxplot for sentiment scores:
 This is the boxplot for star ratings:
 
 ![Bar Chart-Sentiment](./img/boxplot_ratings.png)
-[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
+[Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb) 
 
  
 The mean of the sentiment score distribution is roughly 0.75 while the star ratings distribution’s 5.0 (5/5). This suggests that the overall satisfaction is still high, just not as high as the star ratings distribution shown on the Amazon product page.  
