@@ -112,7 +112,6 @@ Now printing the first 5 rows we can see that each review has a column on star r
 | 0.358     | 0.000     | 0.642     |
 | 0.196     | 0.000     | 0.804     |
 
-{: .fs-7 }
 
 Visualizing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
 
