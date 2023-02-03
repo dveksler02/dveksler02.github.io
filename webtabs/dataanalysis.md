@@ -140,7 +140,7 @@ Using data.describe() function allows us to look at the statistical properties o
 
 Through comparing statistical properties of the two distributions using data.describe() function, we created two boxplots to summarize the statistical characteristics of both the sentiment scores of reviews and the customer ratings. This give Amazon buyers more information on the possible bias of star ratings which most buyers use as a reference of the quality of the product. 
 
-This is the boxplot for sentiment scores:
+This is the boxplot for sentiment scores: 
 
 ![Bar Chart-Sentiment](./img/boxplot_sentiment.png)
 [Python Link](https://github.com/dveksler02/dveksler02.github.io/blob/main/python/NPL-Sentiment%20Analysis-DS105.ipynb)
