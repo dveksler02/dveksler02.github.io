@@ -97,14 +97,13 @@ Now printing the first 5 rows we can see that each review has a column on star r
 | 3        | PE            | 5            |
 | 4        | Johnny        | 5            |
 
-
-| Review                                            | Review Dates     | 
-|:--------------------------------------------------|:-----------------|
-| I cannot comment on the value of this mouse as... | December 7, 2022 |
-| Use for regular computer work and CAD. Works a... | December 6, 2022 |
-| This mouse is great from every perspective, bu... | December 5, 2022 |
-| This fully featured mouse is a real pleasure t... | December 5, 2022 |
-| I went from a 60g mouse to this thing and the ... | December 4, 2022 |
+| Review                                         | Review Dates     | 
+|:-----------------------------------------------|:-----------------|
+| I cannot comment on the value of this mouse as | December 7, 2022 |
+| Use for regular computer work and CAD. Works a | December 6, 2022 |
+| This mouse is great from every perspective, bu | December 5, 2022 |
+| This fully featured mouse is a real pleasure t | December 5, 2022 |
+| I went from a 60g mouse to this thing and the  | December 4, 2022 |
 
 
 | Positive  | Negative  | Neutral   | 
