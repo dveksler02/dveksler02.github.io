@@ -115,7 +115,7 @@ Now printing the first 5 rows we can see that each review has a column on star r
 | 0.358    | 0.000    | 0.642    |
 | 0.196    | 0.000    | 0.804    |
 
-Visualzing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
+Visualizing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
 
 ![Bar Chart-Sentiment](./img/Bar-NLP.png)
 
@@ -123,3 +123,24 @@ Visualzing this finding in the bar charts below, where “Sentiment Analyzer” 
 
 ![Bar Chart-Star Ratings](./img/barchart-ratings.png)
 
+Using data.describe() function allows us to look at the statistical properties of the 2 distributions - ratings and sentiment scores. 
+
+
+|      |Unnamed: 0   |Star Rating|  Positive    | Negative    |  Neutral  |
+|:-----|:------------|:----------|:-------------|:------------|:----------|
+| count| 2554.000000 |2554.000000|  2554.000000 |2554.000000  |2554.000000|
+| mean | 1279.005873 |4.048160   |  0.212965    |0.043112     |0.743931   |
+| std  | 738.631841  |1.428965   |  0.181152    | 0.064534    | 0.169663  |
+| min  | 0.000000    |1.000000   |  0.000000    | 0.000000    | 0.000000  | 
+| 25%  | 640.250000  |3.000000   |  0.091000    | 0.000000    | 0.674000  |
+| 50%  | 1279.500000 |5.000000   |  0.167000    | 0.015500    | 0.777000  |
+| 75%  | 1917.750000 |5.000000   |  0.287000    | 0.067000    | 0.851000  |
+| max  | 2558.000000 |5.000000   |  1.000000    | 0.650000    | 1.000000  |
+
+
+
+Through comparing statistical properties of the two distributions using data.describe() function, we created two boxplots to summarize the statistical characteristics of both the sentiment scores of reviews and the customer ratings. This helps Amazon buyers who are thinking of buying a Logitech mouse and give them more information on the possible bias of star ratings which most buyers use as a reference of the quality of the product. We think the distribution of sentiment score ratings are a more accurate reflection of customer opinions.  
+ 
+Both boxplots are shown below, we can see the mean of the sentiment score distribution is roughly 0.75, contrasting with the star ratings distribution’s 5.0 (5/5). This suggests to the potential buyers that the overall satisfaction is still high, just not as high as the star ratings distribution, which is shown on the Amazon product page, shows.  
+ 
+Another feature is the interquartile range (IQR) of the sentiment distribution is smaller than the ratings distribution, this suggests that the sentiment scores of the customers – the proxy for quality and satisfaction of the product – is very consistent. And as the IQR lies on the top part of the plot, it seems to suggest the product satisfaction rate is consistently good. 
