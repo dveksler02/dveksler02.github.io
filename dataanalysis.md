@@ -138,9 +138,15 @@ Using data.describe() function allows us to look at the statistical properties o
 | max  | 2558.000000 |5.000000   |  1.000000    | 0.650000    | 1.000000  |
 
 
-
 Through comparing statistical properties of the two distributions using data.describe() function, we created two boxplots to summarize the statistical characteristics of both the sentiment scores of reviews and the customer ratings. This helps Amazon buyers who are thinking of buying a Logitech mouse and give them more information on the possible bias of star ratings which most buyers use as a reference of the quality of the product. We think the distribution of sentiment score ratings are a more accurate reflection of customer opinions.  
+
+This is the boxplot for sentiment scores:
+![Bar Chart-Sentiment](./img/boxplot_sentiment.png)
+
+This is the boxplot for star ratings:
+![Bar Chart-Sentiment](./img/boxplot_ratings.png)
+
  
-Both boxplots are shown below, we can see the mean of the sentiment score distribution is roughly 0.75, contrasting with the star ratings distribution’s 5.0 (5/5). This suggests to the potential buyers that the overall satisfaction is still high, just not as high as the star ratings distribution, which is shown on the Amazon product page, shows.  
+We can see the mean of the sentiment score distribution is roughly 0.75, contrasting with the star ratings distribution’s 5.0 (5/5). This suggests to the potential buyers that the overall satisfaction is still high, just not as high as the star ratings distribution, which is shown on the Amazon product page, shows.  
  
 Another feature is the interquartile range (IQR) of the sentiment distribution is smaller than the ratings distribution, this suggests that the sentiment scores of the customers – the proxy for quality and satisfaction of the product – is very consistent. And as the IQR lies on the top part of the plot, it seems to suggest the product satisfaction rate is consistently good. 
