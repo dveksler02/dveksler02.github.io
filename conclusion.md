@@ -50,7 +50,7 @@ The main challenge we faced is the selection bias of the data we are using for N
 # **Conclusion:**
 {: .fs-7 }
 
-Within our project scope, we had two goals we wanted to accomplish when working on this project. The first and primary goal was to create a plug-in program that seamlessly and efficiently extracts Amazon customer reviews and exports them into a CSV. The second goal was to illustrate a use case of how our program can be used for further purposes, and we wanted to accomplish this by creating summary statistics and data analysis on reviews of the Logitech MX Master 3.
+For our final project, we had two goals we wanted to accomplish. The first and primary goal was to create a plug-in program that seamlessly and efficiently extracts Amazon customer reviews and exports them into a CSV. The second goal was to illustrate a use case of how our program can be used for further purposes, so we created summary statistics and data analysis on reviews of the Logitech MX Master 3.
 
 We can confidently say that we accomplished our first goal in its entirety. With our plug-in program, anybody can input a link to an Amazon Customer Reviews page, configure the number of groups to the review count, and seamlessly output a cleaned CSV file with all the review data. This program runs best on Google Colab as we developed our code on it. This factor further accomplishes our goal because of the accessible nature of a Google IDE; to use our program, you do not even need to have Python installed on your computer.
 
