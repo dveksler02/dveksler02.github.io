@@ -38,7 +38,7 @@ This project was completed by David Veksler, Abhinav Vijayakumara, and Zixuan (V
 
 **Abhinav:** Worked on code to extract Amazon Reviews, code on cleaning the extracted data, presentation slides for week 8 and 11, Data Analysis including bar chart,boxplots,histogram and line graph,website text and visuals,commits.  
 
-**Zixuan (Vanessa):**  Worked on natural language processing analysis namely sentiment analysis, used sentiment intensity analyzer to compare distribution and generated various types of wordclouds, made data visualizations such as boxplots and bar charts, presentaion slides for week 8 and 10, commits. 
+**Zixuan (Vanessa):**  Worked on natural language processing analysis namely sentiment analysis, used sentiment intensity analyzer to compare distribution and generated various types of wordclouds, made data visualizations such as boxplots and bar charts, presentaion slides for week 8 and 10, commits.  
 
 ----
 
