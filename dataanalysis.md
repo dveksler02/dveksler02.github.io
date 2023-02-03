@@ -113,6 +113,8 @@ Now printing the first 5 rows we can see that each review has a column on star r
 | 0.358     | 0.000     | 0.642     |
 | 0.196     | 0.000     | 0.804     |
 
+{: .fs-7 }
+
 Visualizing this finding in the bar charts below, where “Sentiment Analyzer” shows the reviews’ sentiment score while the “Customer Ratings” shows the actual star ratings. In the first bar chart, most customer reviews’ sentiment scores as graded neutral, while from the same customers rated the mouse positive (4-5 stars). The discrepancy between the review texts sentiment and the star ratings suggest that many of the positive reviews could be neutral and the star ratings very likely does not reflect the true customer opinion. 
 
 ![Bar Chart-Sentiment](./img/Bar-NLP.png)
@@ -139,12 +141,12 @@ Using data.describe() function allows us to look at the statistical properties o
 Through comparing statistical properties of the two distributions using data.describe() function, we created two boxplots to summarize the statistical characteristics of both the sentiment scores of reviews and the customer ratings. This helps Amazon buyers who are thinking of buying a Logitech mouse and give them more information on the possible bias of star ratings which most buyers use as a reference of the quality of the product. We think the distribution of sentiment score ratings are a more accurate reflection of customer opinions.  
 
 **This is the boxplot for sentiment scores:**
-
+{: .fs-7 }
 ![Bar Chart-Sentiment](./img/boxplot_sentiment.png)
 
 
 **This is the boxplot for star ratings:**
-
+{: .fs-7 }
 ![Bar Chart-Sentiment](./img/boxplot_ratings.png)
 
  
